@@ -17,3 +17,13 @@ public class FieldAndInstanceInitializer {
 		System.out.println(x);
 	}
 }
+
+/**
+ * Order of execution:
+ * 
+ * 1. Field initializers
+ * 2. Instance initializers
+ * 3. Constructors
+ * 
+ * 
+ * */
