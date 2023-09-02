@@ -16,7 +16,7 @@ class T{
 }
 
 
-public class AllInitializers {
+public class AllInitializersTest01 {
 
 	public static void main(String[] args) {
 		
@@ -45,6 +45,20 @@ public class AllInitializers {
 		
 		// CASE 2
 		
+		
+		/**
+		 * 0. class loading, Class object created, static field created
+		 * 1. static field initializer executed
+		 * 2. static initializer executed
+		 * 
+		 *  Class loading is complete, using this class JVM creates the object
+		 *  
+		 * 3. instance variable created
+		 * 4. instance field initializer executed
+		 * 5. instance initializer executed
+		 * 6. constructor executed
+		 * 
+		 * */
 		T t2 = new T();
 		System.out.println("t2.a = " + t2.a);
 		
