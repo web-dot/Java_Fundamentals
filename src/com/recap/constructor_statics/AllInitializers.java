@@ -20,6 +20,8 @@ public class AllInitializers {
 
 	public static void main(String[] args) {
 		
+		// CASE 1
+		
 		/**
 		 * -1. JVM loads T class, Class object of T class is created  
 		 *  0. Memory allocated for static field
@@ -28,7 +30,7 @@ public class AllInitializers {
 		 * 2. static initializer executed 
 		 * 
 		 * */
-		System.out.println("T.b = " + T.b); // 50
+//		System.out.println("T.b = " + T.b); // 50
 		
 		
 		/**
@@ -38,8 +40,15 @@ public class AllInitializers {
 		 * 3. constructors executed
 		 * 
 		 * */
-		T t1 = new T();
-		System.out.println(t1.a); // 40 
+//		T t1 = new T();
+//		System.out.println("ti.a = " + t1.a); // 40 
+		
+		// CASE 2
+		
+		T t2 = new T();
+		System.out.println("t2.a = " + t2.a);
+		
+		
 	}
 }
 
